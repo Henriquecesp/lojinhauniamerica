@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,900);
+
+
+.contentold{
+  padding-top: 500px;
+  width: 850px; 
+  margin: auto;
+  padding: 100px 0;
+}
+ .contentold p{
+    font-size: 1.25em;
+  }
+  .contentold a{
+    color: #696969;
+  }
+
+.fixed_footerold{
+  width: 100%;
+  background: #111;
+  position: relative; left: 0; bottom: 0;
+  padding-bottom: 0cm;
+
+}
+   .fixed_footerold p{
+    color: #696969;
+    column-count: 2;
+    column-gap: 50px;
+    font-size: 1em;
+    font-weight: 300;
+  }
+  .centertextold{
+    text-align: center;
+    color: #696969;
+    padding-bottom: 20px;
+  }
+/* Max widht 900px, small screen*/
+@media screen and (max-width: 900px){
+  .contentold{
+    padding-left: 20px;
+  }
+}
+ 
