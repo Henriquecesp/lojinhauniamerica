@@ -1,0 +1,232 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black !important;
+    }
+    
+    /* Add a black background color to the top navigation */
+    .topnavold {
+      background-color: #383838;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: +1;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnavold a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    /* Change the color of links on hover */
+    .topnavold a:hover {
+      background-color: #ddd;
+      color: black;
+      text-decoration: none !important;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnavold a.active {
+      background-color: #00ff66;
+      color: black;
+    }
+    /* Search bar input position and size*/
+    .topnavold input[type=text] {
+      float: right;
+      padding: 6px;
+      border: none;
+      margin-top: 8px;
+      margin-right: 8px;
+      font-size: 17px;
+    }
+    /* Bag icon size and position*/
+    .topnavold a.cart{
+      float: right;
+      margin-right: 16px;
+    }
+    /* Search icon position*/
+    .topnavold a.search{
+      float: right;
+    }
+    /* Imagem margin top position and text align*/
+    .boxold   {
+      text-align: center;
+      margin-top: 48px; /* Add a top margin to avoid content overlay */
+      color: white;
+      position: relative;
+      z-index: -1;
+    }
+    .boxold img{
+      width: 100%;
+      position: relative;
+    }
+    /* Centered text color, position, bg */
+    .centeredold {
+      padding-top: 13px;
+      color: white;
+      position: absolute;
+      top: 90%;
+      left: 90%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      font-family: 'Times New Roman', Times, serif;
+      background: rgba(0, 0, 0, 0.4); /* Fallback color */
+      border-radius: 25px;;
+      height: 80px;
+      width: 220px;
+    }
+    .banner{
+      width: 100%;
+      height: 450px;
+    }
+    .container{
+      position: relative;
+      text-align: center;
+      padding-top: 35px;
+      width: 100% !important;
+    }
+    .caption{
+      font-size: 20px;
+      text-align: left;
+      color: black !important;
+    }
+    .top-p50{
+      padding-top: 50px;
+    }
+    .top-p75{
+        padding-top: 75px;
+    }
+    .top-p100{
+        padding-top: 100px;
+    }
+    .dropdown-content {
+      display: none;
+      position: fixed;
+      background-color: #383838;
+      top: 52px;
+      left: 199px;
+    }
+    .topnavold:hover > .categoria:hover .dropdown-content {
+      display: grid;
+    }
+/*---------------------*/
+.container-img{
+    display: flex;
+    text-align: center;
+  }
+.zoom {
+    height: 60%;
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+    display: flex;
+    border-radius: 6%;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .8);
+    }
+    .zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    } 
+.produtos-img{
+    margin: 0 auto;
+    text-align: left;
+}
+.produtos-img p{
+    font-size: 20px;
+    padding-top: 10px;
+}
+/*---FOOTER-----*/
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,900);
+
+.contentold{
+  padding-top: 500px;
+  width: 850px; 
+  margin: auto;
+  padding: 50px 0;
+}
+
+.contentold a{
+    color: white;
+  }
+
+.fixed_footerold{
+  width: 100%;
+  background: #383838 ;
+  position: relative; left: 0; bottom: 0;
+  padding-bottom: 0cm;
+
+}
+   .fixed_footerold p{
+    color: white;
+    column-count: 2;
+    column-gap: 20px;
+    font-size: 1em;
+    font-weight: 300;
+  }
+  .centertextold{
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+  }
+/*------------------------------------------------------------------------------------------------------*/
+/* Max widht 900px, small screen*/
+@media screen and (max-width: 900px) {
+    /* Delete the margin top*/
+    .boxold{
+      height: 200;
+      margin-top: 0;
+      background-size: 180%
+    }
+    /* Font size centered text*/
+    .centeredold{
+      font-size: 30px;
+    }
+    /* Menu position become relative, hide when scroll*/
+    .topnavold{
+      padding-top: 50px;
+      position: relative;
+    }
+    /* Active item still fixed so it keep sticky to the top*/
+    .topnavold a.active{
+      position: fixed;
+    }
+    /* Top nav adjustment*/
+    .topnavold a, .topnavold input[type=text] {
+      float: none;
+      top: 0;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnavold input[type=text] {
+      border: 1px solid #ccc;
+    }
+    .topnavold a.search, .topnavold a.cart{
+      width: 100%;
+      float:none;
+    }
+    .col-md-4{
+      padding-top: 40px;
+    }
+    .topnavold:hover > .categoria:hover .dropdown-content {
+      display: contents;
+    }
+    .container-img{
+        display: inline !important;
+    }
+    .produtos-img p{
+      padding-left: 20%;
+  }
+  .contentold{
+    padding-left: 20px;
+  }
+    /*STILL ON 900px SCREEN*/
+  }

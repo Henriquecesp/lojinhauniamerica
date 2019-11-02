@@ -5,33 +5,32 @@
   padding-top: 500px;
   width: 850px; 
   margin: auto;
-  padding: 100px 0;
+  padding: 50px 0;
 }
  .contentold p{
     font-size: 1.25em;
   }
   .contentold a{
-    color: #696969;
+    color: #ffffff;
   }
 
 .fixed_footerold{
   width: 100%;
-  background: #111;
+  background: rgb(46, 46, 46);
   position: relative; left: 0; bottom: 0;
   padding-bottom: 0cm;
-  padding-left: 10%;
 
 }
    .fixed_footerold p{
-    color: #696969;
+    color: white;
     column-count: 2;
-    column-gap: 50px;
+    column-gap: 20px;
     font-size: 1em;
     font-weight: 300;
   }
   .centertextold{
     text-align: center;
-    color: #696969;
+    color: white;
     padding-bottom: 20px;
   }
 /* Max widht 900px, small screen*/
