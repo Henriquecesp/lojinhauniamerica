@@ -1,3 +1,6 @@
+$primary-color:#383838;
+$secondary-color:#00ff66;
+
 body{
     height: 100%;
     margin: 0;
@@ -5,10 +8,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: black !important;
     }
-    
+
     /* Add a black background color to the top navigation */
     .topnavold {
-      background-color: #383838;
+      background-color: $primary-color;
       overflow: hidden;
       position: fixed;
       top: 0;
@@ -35,7 +38,7 @@ body{
     
     /* Add a color to the active/current link */
     .topnavold a.active {
-      background-color: #00ff66;
+      background-color: $secondary-color;
       color: black;
     }
     /* Search bar input position and size*/
@@ -87,11 +90,12 @@ body{
       width: 100%;
       height: 450px;
     }
-    .container{
-      position: relative;
+    .container-new{
       text-align: center;
       padding-top: 35px;
-      width: 100% !important;
+      width: 100%;
+      padding-right: 10px;
+      padding-left: 10px;
     }
     .caption{
       font-size: 20px;
@@ -110,7 +114,7 @@ body{
     .dropdown-content {
       display: none;
       position: fixed;
-      background-color: #383838;
+      background-color: $primary-color;
       top: 52px;
       left: 199px;
     }
@@ -157,7 +161,7 @@ body{
 
 .fixed_footerold{
   width: 100%;
-  background: #383838 ;
+  background: $primary-color ;
   position: relative; left: 0; bottom: 0;
   padding-bottom: 0cm;
 
@@ -227,6 +231,9 @@ body{
   }
   .contentold{
     padding-left: 20px;
+  }
+  .container-new{
+    padding-top: 0px;
   }
     /*STILL ON 900px SCREEN*/
   }

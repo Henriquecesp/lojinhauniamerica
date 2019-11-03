@@ -98,11 +98,12 @@ body {
   height: 450px;
 }
 
-.container {
-  position: relative;
+.container-new {
   text-align: center;
   padding-top: 35px;
-  width: 100% !important;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .caption {
@@ -267,7 +268,11 @@ body {
     padding-left: 20px;
   }
 
+  .container-new {
+    padding-top: 0px;
+  }
+
   /*STILL ON 900px SCREEN*/
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
