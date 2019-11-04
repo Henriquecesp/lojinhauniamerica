@@ -6,7 +6,7 @@
 HTML CSS comentado para um melhor entendimento.
 Uso de Bootstrap, fontawesome e sass.
 
-/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------*/
 
 The Uniamerica shop project, arising from a real problem faced by students of the Software Engineering - Uniamerica course, aims to facilitate courses to obtain their identity through our products.
   Ecommerce with ideals to innovate and facilitate the process of acquiring a visual identity for the courses.
