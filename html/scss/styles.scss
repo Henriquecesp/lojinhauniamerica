@@ -142,15 +142,37 @@ body{
     .zoom:hover {
     transform: scale(1.2); /* (150% zoom) */
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .8);
-    } 
-.produtos-img{
-    margin: 0 auto;
-    text-align: left;
-    z-index: 1;
+    }
+/*SOBREPOR*/
+.sobrepor{
+  position: fixed;
+  margin-top: 25%;
+  margin-left: 35%;
+  z-index: 2;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .8);
 }
-.produtos-img p{
-    font-size: 20px;
-    padding-top: 10px;
+.sobrepor:hover{
+  color: white !important;
+}
+/*GO TO TOP BNT*/
+#myBtn {
+  display: none;/* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  left: 95%; /* Place the button at the bottom of the page */
+  top: 90%; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 15px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
 /*---FOOTER-----*/
 @import url(https://fonts.googleapis.com/css?family=Merriweather:300,900);
@@ -203,6 +225,7 @@ body{
   .section {
     position: relative;
     height: 50vh;
+ 
 
     /* For text formatting. */
     display: flex;
@@ -234,16 +257,19 @@ body{
   /* The styling for the static div. */
   .static {
     background: white;
+    border: 5px solid #f1f1f1;
   }
 
   /* Sets the actual background images */
   .bg1::after {
-    background: no-repeat;
     background-image: url('../img/bg01.jpg');
   }
   
   .bg2::after {
     background-image: url('../img/bg02.jpg');
+  }
+  .img-thumbnail{
+    z-index: 99;
   }
 /*------------------------------------------------------------------------------------------------------*/
 /* Max widht 900px, small screen*/
@@ -290,11 +316,11 @@ body{
     .topnavold:hover > .categoria:hover .dropdown-content {
       display: contents;
     }
+    .img-thumbnail{
+      display: inline !important;
+    }
     .container-img{
         display: inline !important;
-    }
-    .produtos-img{
-      text-align: unset;
     }
   .contentold{
     padding-left: 20px;
