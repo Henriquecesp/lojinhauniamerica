@@ -314,6 +314,14 @@ body {
   background-image: url("../img/bg03.jpg");
 }
 
+.bg4::after {
+  background-image: url("../img/bg04.jpg");
+}
+
+.bg5::after {
+  background-image: url("../img/bg05.jpg");
+}
+
 .img-thumbnail {
   z-index: 99;
 }
