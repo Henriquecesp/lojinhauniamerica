@@ -263,7 +263,7 @@ body {
 
 .section {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   /* For text formatting. */
   display: flex;
   align-items: center;
@@ -296,6 +296,11 @@ body {
   border: 5px solid #f1f1f1;
 }
 
+.static2 {
+  background: #cecece;
+  border: 5px solid #f1f1f1;
+}
+
 /* Sets the actual background images */
 .bg1::after {
   background-image: url("../img/bg01.jpg");
@@ -303,6 +308,10 @@ body {
 
 .bg2::after {
   background-image: url("../img/bg02.jpg");
+}
+
+.bg3::after {
+  background-image: url("../img/bg03.jpg");
 }
 
 .img-thumbnail {

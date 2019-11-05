@@ -14,32 +14,41 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-    <!-- HEADER OF THE PAGE-->
-  <header class="header1">
-    <div class="topnavold">
-      <!--HOME OPTION-->
-      <a href="index.html"><i class="fa fa-shopping-bag"></i> Lojinha Uniamerica</a>
-      <!--ACTIVE OPTION-->
-        <div class="categoria">
-          <a class="active" href="categoria.html">Categorias</a>
-            <div class="dropdown-content">
-                <a href="masculino.html">Masculino</a>
-                <a href="feminino.html">Feminino</a>                
-            </div>
-        </div>
-      <!--OTHER OPTIONS-->
-      <a href="about.html">Sobre nós</a>
-      <!--BAG ICON-->
-      <a class="cart" href="#shopcart"><i class="fa fa-shopping-cart"></i></a>
-      <!--SEARCH BUTTON-->
-      <a class="search" href="#search"><i class="fa fa-search"></i></a>
-      <!--SEARCH-->
-      <input type="text" placeholder="Pesquisar...">
-    </div>
-  </header>
+<!-- HEADER OF THE PAGE-->
+<header class="header1">
+  <div class="topnavold">
+    <!--HOME OPTION-->
+    <a href="index.html"><i class="fa fa-shopping-bag"></i> Lojinha Uniamerica</a>
+    <!--ACTIVE OPTION-->
+      <div class="categoria">
+        <a class="active" href="categoria.html">Categorias</a>
+          <div class="dropdown-content">
+              <a href="masculino.html">Masculino</a>
+              <a href="feminino.html">Feminino</a>                
+          </div>
+      </div>
+    <!--OTHER OPTIONS-->
+    <a href="about.html">Sobre nós</a>
+    <!--BAG ICON-->
+    <a class="cart" href="#shopcart"><i class="fa fa-shopping-cart"></i></a>
+    <!--SEARCH BUTTON-->
+    <a class="search" href="#search"><i class="fa fa-search"></i></a>
+    <!--SEARCH-->
+    <input type="text" placeholder="Pesquisar...">
+  </div>
+</header>
 <!--Container Img-->
-<h1 class="top-p100 call" style="text-align: center;">Todos</h1>
-<div class="top-p75 container-img">
+<main class="wrapper">
+  <section class="section parallax bg3">
+      <h1 style="
+        border: 3px solid #f1f1f1;
+        padding: 20px;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.5);">
+        Categorias</h1>
+  </section>
+<section class="static">
+<div class="pt-5 container-img">
   <div class="mb-5 zoom rounded produtos-img">
       <img class="rounded" src="img/banner-02.jpg" alt="camiseta">
       <p>Camiseta nova coleção</br>R$39,99</p>
@@ -61,10 +70,11 @@
       <button class="ml-1 fundo btn btn-lg btn-success mx-auto">Compre</button>                
   </div>
 </div>
-
+</section>
 <!--REPEAT-->
+<section class="static2">
 <!--Container Img-->
-<div class="container-img">
+<div class="pt-5 container-img">
   <div class="mb-5 zoom rounded produtos-img">
       <img class="rounded" src="img/banner-02.jpg" alt="camiseta">
       <p>Camiseta nova coleção</br>R$39,99</p>
@@ -86,9 +96,10 @@
       <button class="ml-1 fundo btn btn-lg btn-success mx-auto">Compre</button>                
   </div>
 </div>
-
+</section>
+<section class="static">
 <!--Container Img-->
-<div class="container-img">
+<div class="pt-5 container-img">
   <div class="mb-5 zoom rounded produtos-img">
       <img class="rounded" src="img/banner-02.jpg" alt="camiseta">
       <p>Camiseta nova coleção</br>R$39,99</p>
@@ -110,7 +121,7 @@
       <button class="ml-1 fundo btn btn-lg btn-success mx-auto">Compre</button>                
   </div>
 </div>
-
+</section>
 <!--footer-->
 <footer class="fixed_footerold">
   <div class="contentold">
@@ -122,5 +133,6 @@
         Copyright © 2019 Lojinha Uniamerica | Site feito por Elison, Henrique e Mauricio!
   </div>
 </footer>
+</main>
 </body>
 </html>
