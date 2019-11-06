@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="scss/styles.scss">
   <link rel="stylesheet" href="scss/styles.css">
   <link rel="stylesheet" href="css/about.css">
+  <!--AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!--ICONS-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--BOOTSTRAP-->
@@ -38,7 +40,7 @@
     <input type="text" placeholder="Pesquisar...">
   </div>
 </header>
-<div class="container-new">
+<div data-aos="zoom-in" data-aos-duration="1500" class="container-new">
     <img class="mt-5 img-fluid" src="img/img-about.PNG">
   <h4 class="mt-5" style="font-size: 2.5rem;">Sobre nós</h4>
   <p class="mb-0" style="font-size: 1.5rem;">O projeto lojinha Uniamerica, surge de um problema real enfrentado pelos alunos do curso de Engenharia de Software, tem como objetivo facilitar cursos a obterem sua identidade atavés de nossos produtos.</p>
@@ -58,5 +60,10 @@
         Copyright © 2019 Lojinha Uniamerica | Site feito por Elison, Henrique e Mauricio!
   </div>
 </footer>
+<!--SCRIPT-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
