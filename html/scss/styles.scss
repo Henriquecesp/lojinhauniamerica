@@ -35,14 +35,14 @@ body{
     /* Change the color of links on hover */
     .topnavold a:hover {
       background-color: #ddd;
-      color: black;
+      color: black !important;
       text-decoration: none !important;
     }
     
     /* Add a color to the active/current link */
     .topnavold a.active {
       background-color: $secondary-color;
-      color: black;
+      color: black !important;
     }
     /* Search bar input position and size*/
     .topnavold input[type=text] {
@@ -57,6 +57,9 @@ body{
     .topnavold a.cart{
       float: right;
       margin-right: 16px;
+    }
+    .topnavold a{
+      text-decoration: none !important;
     }
     /* Search icon position*/
     .topnavold a.search{
@@ -122,6 +125,24 @@ body{
       background-color: $primary-color;
       top: 52px;
       left: 199px;
+    }
+    .dropdown-content2 {
+      display: none;
+      position: fixed;
+      background-color: $primary-color;
+      top: 52px;
+      right: 20px;
+      width: 400px;
+      transform-origin: top right;
+      float: left;
+      color: #f2f2f2;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .dropdown-content2 i{
+      font-size: 25px;
+      float: right !important;
     }
     .topnavold:hover > .categoria:hover .dropdown-content {
       display: grid;

@@ -30,11 +30,14 @@
       </div>
       <a href="about.html">Sobre nós</a>     
       <!--BAG ICON-->
-      <a class="cart" href="#shopcart"><i class="fa fa-shopping-cart"></i></a>
+      <a id="menu" class="cart" onclick="showDiv()" href="#"><i class="fa fa-shopping-cart"></i></a>
       <!--SEARCH BUTTON-->
       <a class="search" href="#search"><i class="fa fa-search"></i></a>
       <!--SEARCH-->
       <input type="text" placeholder="Pesquisar...">
+      <div id="cart" class="dropdown-content2"><i onclick="hideDiv()" class="fa fa-close"></i>
+      </br>NENHUM PRODUTO NO CARRINHO
+    </div>
   </div>
 </header>
 <!--PARALLAX-->
@@ -187,6 +190,7 @@
 <!--JS-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
