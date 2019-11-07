@@ -54,12 +54,23 @@ body{
       font-size: 17px;
     }
     /* Bag icon size and position*/
-    .topnavold a.cart{
+    .topnavold .cart{
       float: right;
       margin-right: 16px;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnavold .cart:hover{
+      background-color: #ddd;
+      color: black !important;
+      text-decoration: none !important;
     }
     .topnavold a{
       text-decoration: none !important;
+      color: white !important;
     }
     /* Search icon position*/
     .topnavold a.search{
@@ -139,6 +150,7 @@ body{
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
+      box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .8);
     }
     .dropdown-content2 i{
       font-size: 25px;

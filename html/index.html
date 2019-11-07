@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
 <body>
+    <main class="wrapper">
 <header class="header1">
   <div class="topnavold">
     <!--ACTIVE OPTIONS-->
@@ -30,18 +31,22 @@
       </div>
       <a href="about.html">Sobre nós</a>     
       <!--BAG ICON-->
-      <a id="menu" class="cart" onclick="showDiv()" href="#"><i class="fa fa-shopping-cart"></i></a>
+      <div class="cart" onclick="showDiv()"><i id="menu" class="fa fa-shopping-cart"></i></div>
       <!--SEARCH BUTTON-->
       <a class="search" href="#search"><i class="fa fa-search"></i></a>
       <!--SEARCH-->
       <input type="text" placeholder="Pesquisar...">
-      <div id="cart" class="dropdown-content2"><i onclick="hideDiv()" class="fa fa-close"></i>
-      </br>NENHUM PRODUTO NO CARRINHO
+      <div id="cart" class="dropdown-content2">
+      </br> <p class="ml-5 mb-5">NENHUM PRODUTO NO CARRINHO</p>
+      <div class="ml-5">
+        <div onclick="hideDiv()" class="ml-5 btn btn-default"><i class="fa fa-close"></i></div>
+        <div class="ml-5 btn btn-lg btn-success">FINALIZAR COMPRA</div>
+      </div>
     </div>
   </div>
 </header>
 <!--PARALLAX-->
-<main class="wrapper">
+
     <section class="section parallax bg1">
       <h1 data-aos="zoom-in" data-aos-duration="1500" style="
         border: 3px solid #f1f1f1;
