@@ -49,7 +49,7 @@ var oflow = document.getElementById('overflow');
 
 $(oflow).scroll(function() {
 
-    if ($(this).scrollTop()>200)
+    if ($(this).scrollTop()>400)
      {
         $('.to-top').fadeIn();
      }
