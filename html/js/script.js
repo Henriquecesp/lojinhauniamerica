@@ -37,7 +37,7 @@ function addItem2(){
     document.getElementById('none').style.display ="none"
 }
 
-//TO TOP BUTTON
+//TO TOP BUTTON jQuery
 
 jQuery.fn.scrollTo = function(elem, speed) { 
     $(this).animate({
