@@ -58,6 +58,6 @@ $(oflow).scroll(function() {
         $(".to-top").fadeOut();
      }
  });
-function myfunction(){
+function toTopfunction(){
     $("#overflow").scrollTo("#top");
 }
