@@ -322,13 +322,13 @@ body{
   /*TOP*/
   .to-top{
     z-index: 99;
-    top: 80%;
+    top: 88%;
     left: 95%;
     position: fixed;
     cursor: pointer;
     height: 40px;
     width: 40px;
-    border: 1px solid white;
+    border: none;
     background-color: $primary-color;
     color: white;
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .8);
