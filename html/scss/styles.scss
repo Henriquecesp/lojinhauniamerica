@@ -61,6 +61,7 @@ body{
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
+      cursor: pointer;
     }
     .topnavold .cart:hover{
       background-color: #ddd;
@@ -316,6 +317,21 @@ body{
   }
   .img-thumbnail{
     z-index: 99;
+  }
+
+  /*TOP*/
+  .to-top{
+    z-index: 99;
+    top: 80%;
+    left: 95%;
+    position: fixed;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    background-color: $primary-color;
+    color: white;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .8);
   }
 /*------------------------------------------------------------------------------------------------------*/
 /* Max widht 900px, small screen*/

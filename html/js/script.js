@@ -31,3 +31,20 @@ function addItem1(){
     document.getElementById('item1').style.display = "flex"
     document.getElementById('none').style.display ="none"
 }
+
+function addItem2(){
+    document.getElementById('item2').style.display = "flex"
+    document.getElementById('none').style.display ="none"
+}
+
+//TO TOP BUTTON
+
+jQuery.fn.scrollTo = function(elem, speed) { 
+    $(this).animate({
+        scrollTop:  $(this).scrollTop() - $(this).offset().top + $(elem).offset().top 
+    }, speed == undefined ? 1000 : speed); 
+    return this; 
+};
+function myfunction(){
+    $("#overflow").scrollTo("#top");
+}

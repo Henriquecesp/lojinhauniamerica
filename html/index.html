@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
 <body>
-<main class="wrapper">
 <header class="header1">
   <div class="topnavold">
     <!--ACTIVE OPTIONS-->
@@ -63,16 +62,19 @@
     </div>
   </div>
 </header>
-<!--PARALLAX-->
 
-    <section class="section parallax bg1">
-      <h1 data-aos="zoom-in" data-aos-duration="1500" style="
-        border: 3px solid #f1f1f1;
-        padding: 20px;
-        background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0, 0.5);">
-        Lojinha Uniamerica</h1>
-    </section>
+<button onclick="myfunction()" class="to-top"><i class="fa fa-arrow-up"></i></button>
+
+<main id="overflow" class="wrapper">
+<!--PARALLAX-->
+<section id="top" class="section parallax bg1">
+  <h1 data-aos="zoom-in" data-aos-duration="1500" style="
+    border: 3px solid #f1f1f1;
+    padding: 20px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.5);">
+    Lojinha Uniamerica</h1>
+</section>
     
 <section class="pt-1 static">
   <h1 class="mt-5 linetext" style="text-align: center;">Para você</h1>
@@ -138,12 +140,12 @@
   </div>
 </div>             
 <!--Container Img-->
-<h1 class="pt-1 linetext" style="text-align: center;">Produtos Novos</h1>
+<h1 class="pt-1 linetext" style="text-align: center;">Canecas</h1>
 <div class="mt-5 container-img mx-auto">
   <div class="zoom rounded img-thumbnail">
     <img class="rounded" src="img/produto2.png" alt="caneca">
     <p>Caneca Lojinha Uniamerica</br>R$19,99</p>
-    <button class="btn btn-lg btn-default mx-auto"><i class="fa fa-shopping-cart"></i></button>
+    <button onclick="addItem2()" class="btn btn-lg btn-default mx-auto"><i class="fa fa-shopping-cart"></i></button>
     <button class="btn btn-lg btn-success mx-auto">Compre</button>                
   </div>
 
@@ -200,7 +202,7 @@
 </section>
 
 <!--footer-->
-<footer class="fixed_footerold">
+<footer id="footer" class="fixed_footerold">
   <div class="contentold">
     <p class="pl-5">Qualquer duvida entre em contato</br> Sala 404, quarto andar, Uniamerica.</p>
     <a class="pl-5" href="#email"><i class="fa fa-envelope"></i> Entre em contato</a>
