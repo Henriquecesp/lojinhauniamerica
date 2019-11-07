@@ -45,6 +45,19 @@ jQuery.fn.scrollTo = function(elem, speed) {
     }, speed == undefined ? 1000 : speed); 
     return this; 
 };
+var oflow = document.getElementById('overflow');
+
+$(oflow).scroll(function() {
+
+    if ($(this).scrollTop()>200)
+     {
+        $('.to-top').fadeIn();
+     }
+    else
+     {
+        $(".to-top").fadeOut();
+     }
+ });
 function myfunction(){
     $("#overflow").scrollTo("#top");
 }
