@@ -14,7 +14,7 @@ function hideDiv(){
 function delItem1(){
     var item2 = document.getElementById('item2');
     if (item2.style.display === 'none'){
-        document.getElementById('none').style.display ="flex"
+        document.getElementById('none').style.display ="block"
     }
     document.getElementById('item1').style.display = "none"
 }
@@ -22,7 +22,7 @@ function delItem1(){
 function delItem2(){
     var item1 = document.getElementById('item1');
     if (item1.style.display === 'none'){
-        document.getElementById('none').style.display ="flex"
+        document.getElementById('none').style.display ="block"
     }
     document.getElementById('item2').style.display = "none"
 }
