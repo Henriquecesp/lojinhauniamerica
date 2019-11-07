@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
 <body>
-    <main class="wrapper">
+<main class="wrapper">
 <header class="header1">
   <div class="topnavold">
     <!--ACTIVE OPTIONS-->
@@ -37,7 +37,25 @@
       <!--SEARCH-->
       <input type="text" placeholder="Pesquisar...">
       <div id="cart" class="dropdown-content2">
-      </br> <p class="ml-5 mb-5">NENHUM PRODUTO NO CARRINHO</p>
+        <div id=none class="mb-5 none">
+          <div class="cart-item-text">NENHUM PRODUTO NO CARRINHO</div>
+        </div>
+        <div id="item1" class="cart-item">
+          <img class="ml-3 mb-3 img-thumbnail" src="img/cart.png" alt="produtocarrinho">
+          <div class="cart-item-text">
+            <i onclick="delItem1()" class="ml-5 fa fa-close"></i>
+            <p>Camiseta nova coleção </p>
+            <p class="p2"> $39,99</p>
+        </div>
+        </div>
+        <div id="item2" class="cart-item">
+            <img class="ml-3 mb-3 img-thumbnail" src="img/caneca-cart.png" alt="produtocarrinho">
+            <div class="cart-item-text">
+              <i onclick="delItem2()" class="ml-5 fa fa-close"></i>
+              <p>Caneca Lojinha Uniamerica</p>
+              <p class="p2"> $39,99</p>
+            </div>
+        </div>
       <div class="ml-5">
         <div onclick="hideDiv()" class="ml-5 btn btn-default"><i class="fa fa-close"></i></div>
         <div class="ml-5 btn btn-lg btn-success">FINALIZAR COMPRA</div>
@@ -62,7 +80,7 @@
     <div class="mb-5 zoom rounded img-thumbnail">
         <img class="rounded" src="img/banner-02.jpg" alt="camiseta">
         <p>Camiseta nova coleção</br>R$39,99</p>
-        <button class="btn btn-lg btn-default mx-auto"><i class="fa fa-shopping-cart"></i></button>
+        <button onclick="addItem1()" class="btn btn-lg btn-default mx-auto"><i class="fa fa-shopping-cart"></i></button>
         <button class="btn btn-lg btn-success mx-auto">Compre</button>                
     </div>
 
